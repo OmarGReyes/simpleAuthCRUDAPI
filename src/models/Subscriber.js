@@ -4,7 +4,7 @@ const {Schema, model} = require('mongoose');
  const subscriberSchema = new Schema({
     SystemId: String,
     Area: String,
-    PublicId: String,
+    PublicId: Number,
     CountryCode: String,
     CountryName: String,
     Name: String,
