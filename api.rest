@@ -3,3 +3,44 @@ POST http://localhost:3000/api/signup
 
 ###
 GET http://localhost:3000/api/
+
+
+###
+POST http://localhost:3000/api/account/signup
+Content-Type: application/json
+
+{
+    "username": "patata",
+    "password": "MrPotat0"
+}
+
+###
+POST http://localhost:3000/api/account/login
+Content-Type: application/json
+
+{
+    "username": "patata",
+    "password": "MrPotat0"
+}
+
+###
+GET http://localhost:3000/api/subscribers
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDUyYTUzNzMxYzdmYTIxNjRmYzlhYjAiLCJpYXQiOjE2MTYyNzg5NTd9.34hG9FAFhbonUcBDOymOivj4plMTglzCuFVIcsiES9g
+
+###
+GET http://localhost:3000/api/subscribers/
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDUyYTUzNzMxYzdmYTIxNjRmYzlhYjAiLCJpYXQiOjE2MTYyNzg5NTd9.34hG9FAFhbonUcBDOymOivj4plMTglzCuFVIcsiES9g
+
+###
+POST http://localhost:3000/api/subscribers/
+Content-Type: application/json
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDUyYTUzNzMxYzdmYTIxNjRmYzlhYjAiLCJpYXQiOjE2MTYyNzg5NTd9.34hG9FAFhbonUcBDOymOivj4plMTglzCuFVIcsiES9g
+
+{
+    "Name": "Omar Gonzalez",
+    "Email": "omargreyes@yatusabe.com",
+    "CountryCode": "CO",
+    "PhoneCode": "57",
+    "PhoneNumber": "300824"
+}
+
