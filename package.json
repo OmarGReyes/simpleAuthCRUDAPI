@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.js --exec babel-node",
-    "heroku-postbuild": "npm run build"
+    "start": "nodemon src/index.js --exec babel-node"
+    
   },
   "keywords": [],
   "author": "",
