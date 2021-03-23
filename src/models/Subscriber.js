@@ -28,4 +28,4 @@ const {Schema, model} = require('mongoose');
      timestamps: String,
  });
 
- module.exports = model('Subscriber', subscriberSchema,'subscribers')
+ module.exports = model('Subscriber', subscriberSchema,'subscriber')
