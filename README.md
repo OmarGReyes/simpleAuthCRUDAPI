@@ -1,4 +1,4 @@
-# simpleAuthCRUDAPI
+# simple Authentication and CRUD API
 Simple Auth and CRUD API with node, ES6, express and mongoDB.
 
 <p>This API was created to support the development of an AngularJS application for subscriber management.And it has the following endpoints:</p>
