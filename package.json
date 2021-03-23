@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run clean && npm run build-babel",
-  "build-babel": "./node_modules/.bin/babel -d ./build ./src",
-  "clean": "rm -rf build && mkdir build",
-  "start": "node ./build/bin/www"
+    "build-babel": "./node_modules/.bin/babel -d ./build ./src",
+    "clean": "rm -rf build && mkdir build",
+    "start": "node ./build/bin/www"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +19,7 @@
     "mongoose": "^5.12.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.10",
     "@babel/core": "^7.13.10",
     "@babel/node": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
