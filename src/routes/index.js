@@ -13,6 +13,8 @@
 
  router.post('/account/login',User.logIn)
 
+ //<-----------Subscribers-------->
+
  router.get('/subscribers', middleware.verifyToken, Subscriber.getSubscribers)
 
  router.get('/subscribers/:id',verifyToken ,Subscriber.getSubscriber)
