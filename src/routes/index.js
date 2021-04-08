@@ -17,13 +17,13 @@
 
  router.get('/subscribers', middleware.verifyToken, Subscriber.getSubscribers)
 
- router.get('/subscribers/:id',verifyToken ,Subscriber.getSubscriber)
+ router.get('/subscribers/:id',middleware.verifyToken ,Subscriber.getSubscriber)
 
- router.post('/subscribers', verifyToken, Subscriber.createSubscriber)
+ router.post('/subscribers', middleware.verifyToken, Subscriber.createSubscriber)
 
- router.put('/subscribers/:id', verifyToken, Subscriber.modifySubscriber)
+ router.put('/subscribers/:id', middleware.verifyToken, Subscriber.modifySubscriber)
 
- router.delete('/subscribers/:id', verifyToken, Subscriber.deleteSubscriber)
+ router.delete('/subscribers/:id', middleware.verifyToken, Subscriber.deleteSubscriber)
 
 
 
