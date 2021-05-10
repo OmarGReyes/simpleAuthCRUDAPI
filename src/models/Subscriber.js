@@ -1,7 +1,8 @@
-const {Schema, model} = require('mongoose');
+const { Schema, model } = require("mongoose");
+const mongoosePaginate = require("mongoose-paginate-v2");
 
-
- const subscriberSchema = new Schema({
+const subscriberSchema = new Schema(
+  {
     SystemId: String,
     Area: String,
     PublicId: Number,
@@ -22,10 +23,12 @@ const {Schema, model} = require('mongoose');
     Topics: [String],
     Activity: String,
     ConnectionState: Number,
-    Id: Number
-     
- },{
-     timestamps: String,
- });
+    Id: Number,
+  },
+  {
+    timestamps: String,
+  }
+);
+subscriberSchema.plugin(mongoosePaginate);
 
- module.exports = model('Subscriber', subscriberSchema,'subscriber')
+module.exports = model("Subscriber", subscriberSchema, "subscriber");

@@ -1,12 +1,12 @@
 ###
-POST http://localhost:3000/api/signup
+POST http://localhost:4000/api/signup
 
 ###
-GET http://localhost:3000/api/
+GET http://localhost:4000/api/
 
 
 ###
-POST http://localhost:3000/api/account/signup
+POST http://localhost:4000/api/account/signup
 Content-Type: application/json
 
 {
@@ -24,15 +24,15 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/api/subscribers
+GET http://localhost:4000/api/subscribers
 Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDUyYTUzNzMxYzdmYTIxNjRmYzlhYjAiLCJpYXQiOjE2MTYyNzg5NTd9.34hG9FAFhbonUcBDOymOivj4plMTglzCuFVIcsiES9g
 
 ###
-GET http://localhost:3000/api/subscribers/
+GET http://localhost:4000/api/subscribers/
 Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDUyYTUzNzMxYzdmYTIxNjRmYzlhYjAiLCJpYXQiOjE2MTYyNzg5NTd9.34hG9FAFhbonUcBDOymOivj4plMTglzCuFVIcsiES9g
 
 ###
-POST http://localhost:3000/api/subscribers/
+POST http://localhost:4000/api/subscribers/
 Content-Type: application/json
 Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDUyYTUzNzMxYzdmYTIxNjRmYzlhYjAiLCJpYXQiOjE2MTYyNzg5NTd9.34hG9FAFhbonUcBDOymOivj4plMTglzCuFVIcsiES9g
 
