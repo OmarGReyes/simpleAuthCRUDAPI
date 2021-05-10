@@ -12,6 +12,8 @@ export const verifyToken= (req,res,next)=>{
        return res.status(401).send('Unautorizhed request')
     }
     const payload = jwt.verify(token, 'secretKey')
+
+    
    //  console.log(bearer);
    //  console.log(payload);
     next()
